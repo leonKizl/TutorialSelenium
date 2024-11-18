@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
-public class OpenChrome {
+public class chromeTest {
 
     @Test
     public void openBrowser() {
@@ -23,6 +23,6 @@ public class OpenChrome {
         driverChrome.get("https://google.com");
 
         // Закрываем браузер
-//        driverChrome.quit();
+        driverChrome.quit();
     }
 }

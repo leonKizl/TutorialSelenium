@@ -20,6 +20,7 @@ public class DriverSelector {
         driver.get("http://seleniumdemo.com");
         driver.manage().window().fullscreen();
         driver.findElement(By.xpath("//span[text()='Shop']")).click();
+        driver.quit();
 
 
     }

@@ -55,7 +55,13 @@ public class BasicActionsTest {
             System.out.println(el.getText());
 
         }
-        trorF("Audi",select);
+//        trorF("Audi",select);
+//        System.out.println("HEAR!");
+//        System.out.println(driver.findElement(By.cssSelector("form[onsubmit *='submit']")).getText());
+//        System.out.println(driver.findElement(By.cssSelector(".topSecret")).getText());
+//        System.out.println(driver.findElement(By.cssSelector(".topSecret")).getAttribute("value"));
+//        System.out.println(driver.findElement(By.cssSelector(".topSecret")).getAttribute("textContent"));
+        driver.quit();
 
 
     }
@@ -103,6 +109,7 @@ public class BasicActionsTest {
     }
     public static boolean trorF(String n,WebElement websel){
         Select sdf = new Select(websel);
+
         List<WebElement> sef = sdf.getOptions();
         for (WebElement el:sef){
             if (el.getText().equals(n)){

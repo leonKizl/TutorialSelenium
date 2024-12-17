@@ -32,6 +32,7 @@ public class newWindows {
 
         Alert alert = driver.switchTo().alert();
         alert.accept();
+        driver.quit();
 
     }
 }
